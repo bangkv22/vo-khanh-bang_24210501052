@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Hub</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">      
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/images/LOGO.png"
+            alt="Logo"
+            width="60"
+            height="60"
+            class="me-2">
+        </a>
+        <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="menu">
+
+     <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+                <i class="bi bi-house-fill"></i>
+                Trang chủ
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="courses.html">
+                <i class="bi bi-book-fill"></i>
+                Workshop
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="register.html">
+                <i class="bi bi-pencil-square"></i>
+                Đăng ký
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="registrations.html">
+                <i class="bi bi-table"></i>
+                Danh sách đăng ký
+            </a>
+        </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+<section class="hero">
+
+    <div class="container">
+        <h1>
+         Workshop Hub
+        </h1>
+        <p class="lead">
+        Nơi giúp sinh viên phát triển kỹ năng, định hướng nghề nghiệp và khám phá công nghệ mới.
+        </p>
+        <a href="courses.html"
+           class="btn btn-light btn-lg">
+            Khám phá ngay
+
+        </a>
+
+    </div>
+
+</section>
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Giới Thiệu
+        </h2>
+
+        <div class="intro-box">
+        <p class="intro-text">
+
+    Workshop Hub là nền tảng giới thiệu các workshop kỹ năng, công nghệ và định hướng nghề nghiệp dành cho sinh viên.
+    Website giúp sinh viên dễ dàng tìm kiếm, khám phá và đăng ký các chương trình học tập bổ ích nhằm nâng cao kiến thức,
+    phát triển kỹ năng mềm và chuẩn bị hành trang cho tương lai. Thông qua các workshop thực tế, sinh viên có cơ hội học hỏi
+    từ chuyên gia, mở rộng mối quan hệ và nâng cao khả năng cạnh tranh trong học tập cũng như công việc sau khi tốt nghiệp.
+        </p>
+
+        </div>
+    </div>
+
+</section>
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Workshop Nổi Bật
+
+        </h2>
+
+        <div class="row"
+             id="featuredCourses">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-5">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Lợi Ích Khi Tham Gia
+
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+            <div class="benefit-box text-center">
+
+                <i class="bi bi-stars"></i>
+
+                    <h4 class="mt-3">
+                        Học Thực Chiến
+                    </h4>
+
+                    <p>
+                         Tiếp cận nhiều kiến thức thực tế từ chuyên gia.
+                    </p>
+
+                </div>
+
+            </div>
+
+        <div class="col-md-4">
+
+            <div class="benefit-box text-center">
+
+                <i class="bi bi-award"></i>
+
+                    <h4 class="mt-3">
+                        Chứng Nhận
+                    </h4>
+
+                    <p>
+                        Được nhận giấy chứng nhận sau khi đã hoàn thành.
+                    </p>
+
+                </div>
+
+            </div>
+
+         <div class="col-md-4">
+
+                <div class="benefit-box text-center">
+
+                    <i class="bi bi-people"></i>
+
+                    <h4 class="mt-3">
+                        Kết Nối Chuyên Gia
+                    </h4>
+
+                    <p>
+                     Mở rộng mối quan hệ với chuyên gia và sinh viên.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer>
+
+    <p>
+        Võ Khánh Băng - MSSV: 24210501052
+    </p>
+
+    <p>
+        Email: vokhanhbang@gmail.com
+    </p>
+
+</footer>
+
+<script src="assets/js/data.js"></script>
+
+<script>
+
+const featuredCourses =
+document.getElementById("featuredCourses");
+
+courses.slice(0,4).forEach(course => {
+
+featuredCourses.innerHTML += `
+
+<div class="col-lg-3 col-md-6 col-12 mb-4">
+
+<div class="card h-100">
+
+<img src="${course.image}"
+     class="card-img-top"
+     alt="${course.title}">
+
+<div class="card-body">
+
+<h5>${course.title}</h5>
+
+<p>${course.description}</p>
+
+<a href="courses.html"
+   class="btn btn-primary">
+
+Xem thêm
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
