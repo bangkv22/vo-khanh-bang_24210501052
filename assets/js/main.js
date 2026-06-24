@@ -1,5 +1,5 @@
 const courseList = document.getElementById("courseList");
-function renderCourses(data) {
+function renderCourses(data) {/*hiển thị danh sách workshop*/
 
     if (!courseList) return;
 
@@ -78,7 +78,7 @@ if (courseList) {
     const resetBtn =
         document.getElementById("resetBtn");
 
-    function filterCourses() {
+    function filterCourses() {/*tìm và lọc worshop*/
 
         const keyword =
             searchInput.value.toLowerCase();
@@ -146,7 +146,7 @@ if (courseList) {
     );
 
 }
-function showDetail(id) {
+function showDetail(id) {/*xem chi tiết*/
 
     const course =
         courses.find(c => c.id === id);
@@ -379,7 +379,7 @@ const registrationTable =
         "registrationTable"
     );
 
-function renderRegistrations() {
+function renderRegistrations() {/*hiển thị người đăng kí*/
 
     if (!registrationTable) return;
 
@@ -447,7 +447,7 @@ registrations.forEach(
 
 }
 
-function deleteRegistration(id){
+function deleteRegistration(id){/*xóa1 đk*/
 
     if(
         !confirm(
